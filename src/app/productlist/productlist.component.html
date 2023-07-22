@@ -1,14 +1,19 @@
-<img src="/assets/iphone.png">
-    <p>Name: {{ product.name }}</p>
-    <p>Price: {{ '$' + product.price }}</p>
-    <p>Color: {{product.color}}</p>
-    <p>Discounted Price: {{ getDiscountedPrice().toFixed(2) }}</p>
-    <p>{{product.inStock > 0 ? 'Only' + product.inStock +' items left': 'Not in Stock'}}</p>
-    <button (click)="decrementCartValue()">-</button>
-    <span>{{ addToCart }}</span>
-    <button (click)="incrementCartValue()">+</button>
-   
-   
-
-
-    
+<div class="ekart--products--container">
+   class="ekart--product--item" "ngFor ="let prod of products">
+    <div class="ekart-wishlist-sale-container">
+        <div class="ekart--add--to--wishlist">
+          <i class="fa fa-heart-o" aria-hidden="true">
+        </i>
+        <div class="ekart-on-sale-tag">75% OFF</div>
+      </div>
+      <div class="ekart--product--image">
+          <img [src]="Prod.imageiurl" class="ekart--product--image">
+      </div>
+      <div class="ekart--add--to--price">
+          {{Prod.PRICE}}
+      </div>
+      <div class="ekart--product--name">{{Prod.NAME}}</div>
+      <div class="ekart--product--category">{{Prod.GENDER}} . {{Prod.CATEGORY}} . {{Prod.BRAND}}</div>
+      <div class="ekart--product--available-colors">{{Prod.Colors.length}} Colors . Best Seller</div>
+  </div>
+  
