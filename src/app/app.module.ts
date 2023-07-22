@@ -4,21 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { headerComponent } from './Header/Header.component';
 import { TopHeaderComponent } from './Header/top-header/top-header.component';
-import { TopMenuComponent } from './Header/top-menu/top-menu.component';
-import { MenuComponent } from './Header/menu/menu.component';
+
 import { ProductListComponent } from './productlist/productlist.component';
+import { SearchComponent } from './search/search.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
-    
     headerComponent,
     TopHeaderComponent,
-    TopMenuComponent,
-    MenuComponent,
+
     ProductListComponent,
+    SearchComponent,
+    
+
 
   ],
   imports: [
