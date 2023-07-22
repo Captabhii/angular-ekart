@@ -22,9 +22,7 @@ export class ProductListComponent {
     return this.product.price - (this.product.price * this.product.discount / 100)
   }
 
-  onNameChange(event: any){
-   
-  }
+  
 
   decrementCartValue(){
     if(this.addToCart > 0){
